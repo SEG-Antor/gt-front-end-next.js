@@ -18,9 +18,15 @@ const HeaderComponent = () => {
 
       </HeaderDiv>
 
-      <nav>
+      <StyledNav>
+        <Link href="pre-owned">PRE-OWNED</Link>
+        <Link href="refubrished">REFUBRISHED</Link>
+        <Link href=" whole-sale">WHOLESLE</Link>
+        <Link href="resources">RESOURCES</Link>
+        <Link href="contact-us">CONTACT US</Link>
+        <Link href="offer">OFFER</Link>
+      </StyledNav>
 
-      </nav>
     </header>
   )
 }
@@ -62,6 +68,22 @@ const HeaderDiv = styled.div`
 
     box-shadow: 0 4px 4px 0 #00000038;
   }
+
+`
+
+const StyledNav = styled.nav`
+    background: rgba(0, 132, 214, 0.2);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+
+    a{
+      margin:0 20px;
+    }
+
+    a:last-child{
+      color: rgba(242, 110, 33, 1);
+    }
 `
 
 export default HeaderComponent
