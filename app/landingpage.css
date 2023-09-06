@@ -1,0 +1,45 @@
+.logos{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 5px;
+    padding: 10px;
+
+    border-radius: 4px;
+}
+
+.logos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.logos div img{
+    margin-right: 5px;
+}
+
+.banner-2{
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.pre-and-refub{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.pre-and-refub a{
+    border: 1px solid rgba(18, 18, 18, 1);
+    border-radius: 6px;
+    padding:15px 50px ;
+    margin-right: 2px;
+}
+
+.pre-and-refub a:hover{
+    background-color: rgba(178, 218, 243, 0.3);
+}
