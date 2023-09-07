@@ -59,12 +59,12 @@ export default function Home() {
 
       <div className='products'>
         <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8-red.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8-green.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
         <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
         <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
-        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
-        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
-        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
-        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8-green.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8-red.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
         <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
       </div>
 
@@ -81,6 +81,13 @@ export default function Home() {
       <Link href="top-seller">
         <img className='sub-banner' src="/staticImages/third-banner.png" alt="second banner" />
       </Link>
+
+      <div className='products'>
+        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8-red.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8-green.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+      </div>
 
       <Comments></Comments>
     </main>
