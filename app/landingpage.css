@@ -1,8 +1,4 @@
 
-.carosel-img{
-    width: 100vw;
-    height: 50vh;
-}
 
 .logos{
     background-color: white;
@@ -98,12 +94,6 @@
 
 
 @media screen and (max-width:550px) {
-
-    
-    .carosel-img{
-        height: 25vh;
-    }
-
     .logos{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
