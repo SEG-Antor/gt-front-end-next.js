@@ -9,7 +9,7 @@ header{
   padding: 5px;
   width: 90vw;
   margin: auto;
-  max-width: 1080px;
+  max-width: 1440px;
 
 }
 
@@ -130,8 +130,8 @@ nav a:last-child{
     .mobile-product-search{
         position: relative;
         display: block;
-        width: 90vw;
-        padding: 10px;
+        width: 80vw;
+        padding: 2px 0 5px 0;
         margin: auto;
 
     }
@@ -143,13 +143,13 @@ nav a:last-child{
     }
     .mobile-product-search button{
         position: absolute;
-        top: calc(10px + .5rem);
+        top: calc(2px + .5rem);
         right: 20px;
     }
 
     nav{
         position: fixed;
-        top: 55px;
+        top: 48px;
         left: -100%;
         flex-direction: column;
         justify-content: flex-start;
@@ -158,7 +158,7 @@ nav a:last-child{
         width: 99vw;
         height: 110vh;
         z-index: 5;
-        background-color: rgb(162, 180, 193);
+        background-color: rgb(210 210 210);
 
         transition: all .3s;
     }

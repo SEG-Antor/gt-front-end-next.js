@@ -10,3 +10,8 @@ a{
     text-decoration: none;
     color: black;
 }
+
+/* max-height for all section  */
+.logos, .sub-banner, .products, .adds, .comments section, .footer-section{
+    max-width: 1440px;
+}
