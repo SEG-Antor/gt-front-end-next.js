@@ -68,6 +68,13 @@ export default function Home() {
 
 
       <button className='see-more'> See More</button>
+
+      <div className='adds'>
+        <img src='/adds/add1.png' alt='product add' />
+        <img src='/adds/add2.png' alt='product add' />
+        <img src='/adds/add3.png' alt='product add' />
+        <img src='/adds/add4.png' alt='product add' />
+      </div>
     </main>
   )
 }
