@@ -65,6 +65,9 @@ export default function Home() {
         <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
         <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
       </div>
+
+
+      <button className='see-more'> See More</button>
     </main>
   )
 }

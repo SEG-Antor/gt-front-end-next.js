@@ -53,3 +53,15 @@
     margin: auto;
     margin-top: 50px;
 }
+
+.see-more{
+    background-color: rgba(178, 218, 243, 0.3);
+    padding:10px 40px ;
+    border: 1px solid;
+    border-radius: 5px;
+
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+
+}
