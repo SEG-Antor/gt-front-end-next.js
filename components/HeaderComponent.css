@@ -1,29 +1,52 @@
+header{
+    background: #E5E4E2;
+}
+
 .headerDiv{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px;
-  background: #E5E4E2;
+  padding: 5px;
+  width: 90vw;
+  margin: auto;
+  max-width: 1080px;
 }
 
 .headerDiv div{
     display: flex;
+    align-items: center;
 }
 
-.headerDiv img{
-    width: 200px;
-    height: 51px;
+.gtlogo img{
+    width: 150px;
     margin-right: 25px;
 }
 
-.headerDiv input {
+.product-search{
+    position: relative;
+}
+
+
+.product-search button{
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
+.product-search svg{
+    color: red;
+}
+
+.product-search input {
     background: white;
-    width: 30vw;
+    width: 350px;
+    padding: 9px;
+    font-size: 17px;
     border-radius: 4px;
     padding-left: 5px;
 }
 
-.headerDiv a{
+.headerDiv a:not(.gtlogo){
     border: 1px solid #3E3E3B;
     border-radius: 4px;
     padding: 9px 15px;
@@ -32,6 +55,9 @@
     font-size: 17px;
     color: #249EF6;
     display: inline-block;
+}
+
+.headerDiv a:not(.gtlogo):hover{
     box-shadow: 0 4px 4px 0 #00000038;
 }
 
@@ -52,6 +78,11 @@ nav{
 
 nav a{
     margin:0 20px;
+    font-weight: 500;
+}
+
+nav a:hover{
+    color :rgba(242, 110, 33, 1) ;
 }
 
 nav a:last-child{
@@ -59,54 +90,5 @@ nav a:last-child{
 }
 
 @media screen and (max-width:550px) {
-    header{
-        margin-bottom: 20px;
-    }
-
-    .headerDiv{
-        flex-direction: column;
-        padding:20px 5px;
-    }
-    
-    .headerDiv > div{
-        width: 90vw;
-        align-items: center;
-    }
-
-    .headerDiv >div:first-child {
-        margin-bottom: 10px;
-        flex-direction: column;
-    }
-
-    .headerDiv >div:first-child img {
-       transform: scale(.5);
-    }
-
-    .headerDiv > div:first-child input{
-        width: 100%;
-    }
-    .headerDiv > div:last-child{
-        justify-content: space-between;
-    }
-
-    nav{
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-        
-        display: none; 
-    }
-
-    #navBtn{
-        display: block;
-        background-color: red;
-        width: 100%;
-        padding: 10px;
-        
-        display: flex;
-        justify-content: center;
-        background-color: rgba(0, 132, 214, 0.2);
-    }
-
 
 }
