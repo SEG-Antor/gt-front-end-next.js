@@ -1,0 +1,100 @@
+[debug] [2023-09-07T02:22:17.695Z] ----------------------------------------------------------------------
+[debug] [2023-09-07T02:22:17.696Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mdant\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-07T02:22:17.697Z] CLI Version:   12.5.2
+[debug] [2023-09-07T02:22:17.697Z] Platform:      win32
+[debug] [2023-09-07T02:22:17.697Z] Node Version:  v18.16.0
+[debug] [2023-09-07T02:22:17.698Z] Time:          Thu Sep 07 2023 08:22:17 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-09-07T02:22:17.698Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-07T02:22:17.755Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-07T02:22:17.755Z] > authorizing via signed-in user (it@socialengagementgroup.com)
+[debug] [2023-09-07T02:22:17.756Z] [iam] checking project global-traders-usa-84059 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-07T02:22:17.757Z] > refreshing access token with scopes: []
+[debug] [2023-09-07T02:22:17.758Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-07T02:22:17.758Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-07T02:22:18.226Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-09-07T02:22:18.226Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-07T02:22:18.233Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/global-traders-usa-84059:testIamPermissions [none]
+[debug] [2023-09-07T02:22:18.233Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/global-traders-usa-84059:testIamPermissions x-goog-quota-user=projects/global-traders-usa-84059
+[debug] [2023-09-07T02:22:18.233Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/global-traders-usa-84059:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-07T02:22:19.988Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/global-traders-usa-84059:testIamPermissions 200
+[debug] [2023-09-07T02:22:19.988Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/global-traders-usa-84059:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-07T02:22:19.989Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/global-traders-usa-84059 [none]
+[debug] [2023-09-07T02:22:20.689Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/global-traders-usa-84059 200
+[debug] [2023-09-07T02:22:20.689Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/global-traders-usa-84059 {"projectId":"global-traders-usa-84059","projectNumber":"1069022321540","displayName":"global-traders-usa","name":"projects/global-traders-usa-84059","resources":{"hostingSite":"global-traders-usa-84059","storageBucket":"global-traders-usa-84059.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_aa7d69df-bd19-4b89-a14b-0a429afe9633"}
+[debug] [2023-09-07T02:22:25.177Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/global-traders-usa-84059/sites pageToken=&pageSize=10
+[debug] [2023-09-07T02:22:26.658Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/global-traders-usa-84059/sites 200
+[debug] [2023-09-07T02:22:26.658Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/global-traders-usa-84059/sites {"sites":[{"name":"projects/global-traders-usa-84059/sites/global-traders-usa-84059","defaultUrl":"https://global-traders-usa-84059.web.app","appId":"1:1069022321540:web:419c5d35f4cdd4c64f5bd1","type":"DEFAULT_SITE"}]}
+[debug] [2023-09-07T02:22:26.659Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1069022321540:web:419c5d35f4cdd4c64f5bd1/config [none]
+[debug] [2023-09-07T02:22:28.340Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1069022321540:web:419c5d35f4cdd4c64f5bd1/config 200
+[debug] [2023-09-07T02:22:28.340Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1069022321540:web:419c5d35f4cdd4c64f5bd1/config {"projectId":"global-traders-usa-84059","appId":"1:1069022321540:web:419c5d35f4cdd4c64f5bd1","storageBucket":"global-traders-usa-84059.appspot.com","locationId":"us-central","apiKey":"AIzaSyBFoGhOr2l4aRV_wP-1TLt3HymKtTW_Qy0","authDomain":"global-traders-usa-84059.firebaseapp.com","messagingSenderId":"1069022321540"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Creating an optimized production build...
+
+[info] - warn Compiled with warnings
+
+
+[info] - info Linting and checking validity of types...
+
+[info] ./node_modules/node-fetch/lib/index.js
+Module not found: Can't resolve 'encoding' in 'D:\codings\official\glabal-traders\gt-front-end\node_modules\node-fetch\lib'
+
+Import trace for requested module:
+./node_modules/node-fetch/lib/index.js
+./node_modules/@firebase/storage/dist/node-esm/index.node.esm.js
+./node_modules/firebase/storage/dist/index.mjs
+./app/admin-secret/catagory/add-catagory/page.js
+
+
+[info] 
+Failed to compile.
+
+./app/admin-secret/add-product/page.js
+46:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./app/page.js
+15:7  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+19:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+24:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+29:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+34:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+39:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+44:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+50:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+74:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+75:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+76:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+77:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/Comments.js
+25:263  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./components/HeaderComponent.js
+16:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/ImagesForCatagory.js
+57:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/MyFooter.js
+10:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+10:17  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+./components/SingleProduct.js
+9:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+13:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+15:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[debug] [2023-09-07T02:22:51.220Z] Error: ENOENT: no such file or directory, open 'D:\codings\official\glabal-traders\gt-front-end\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
