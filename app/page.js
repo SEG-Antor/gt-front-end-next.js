@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import "./landingpage.css"
+import SingleProduct from '@/components/SingleProduct'
 
 export default function Home() {
   return (
@@ -51,6 +52,18 @@ export default function Home() {
       <div className='pre-and-refub'>
         <Link href="pre-owned"> PRE-OWNED</Link>
         <Link href="refubrished"> REFUBRISHED</Link>
+      </div>
+
+
+      <div className='products'>
+        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
+        <SingleProduct image="/iphone8.png" description="iPhone 8 64 GB Unlocked"></SingleProduct>
       </div>
     </main>
   )
