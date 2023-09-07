@@ -1,5 +1,5 @@
 .headerDiv{
-    display:flex;
+  display:flex;
   justify-content: space-between;
   align-items: center;
   padding: 35px;
@@ -32,8 +32,11 @@
     font-size: 17px;
     color: #249EF6;
     display: inline-block;
-
     box-shadow: 0 4px 4px 0 #00000038;
+}
+
+.headerDiv a:last-child{
+    margin-right: 0;
 }
 
 nav{
@@ -49,4 +52,37 @@ nav a{
 
 nav a:last-child{
     color: rgba(242, 110, 33, 1);
+}
+
+@media screen and (max-width:550px) {
+    .headerDiv{
+        flex-direction: column;
+        padding:20px 5px;
+    }
+
+    .headerDiv >div:first-child {
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+
+    .headerDiv >div:first-child img {
+       transform: scale(.5);
+    }
+
+    .headerDiv > div:first-child input{
+        width: 100%;
+    }
+    .headerDiv > div:last-child{
+        justify-content: space-between;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        
+        display: none; 
+    }
+
+
 }

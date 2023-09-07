@@ -29,3 +29,12 @@
     display: block;
     margin: 5px 0;
 }
+
+
+
+@media screen and (max-width: 550px) {
+    .comments section{
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
