@@ -62,10 +62,15 @@ nav a:last-child{
     header{
         margin-bottom: 20px;
     }
-    
+
     .headerDiv{
         flex-direction: column;
         padding:20px 5px;
+    }
+    
+    .headerDiv > div{
+        width: 90vw;
+        align-items: center;
     }
 
     .headerDiv >div:first-child {
