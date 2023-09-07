@@ -10,6 +10,7 @@ header{
   width: 90vw;
   margin: auto;
   max-width: 1080px;
+
 }
 
 .headerDiv div{
@@ -65,6 +66,10 @@ header{
     margin-right: 0;
 }
 
+#mobile-nav{
+    display: none;
+}
+
 #navBtn{
     display: none;
 }
@@ -90,5 +95,58 @@ nav a:last-child{
 }
 
 @media screen and (max-width:550px) {
+    .headerDiv{
+        width: 100vw;
+    }
+    .gtlogo{
+        width: 80px;
+    }
 
+    .headerDiv a:not(.gtlogo){
+        font-size: 10px;
+    }
+
+    .product-search{
+
+        display: none;
+
+    }
+
+    #mobile-nav{
+        display: block;
+        padding: 7px;
+        border: 1px solid;
+        border-radius: 4px;
+    }
+
+    nav{
+        position: absolute;
+        top: 56px;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 90vw;
+        height: 100vh;
+        z-index: 5;
+        background-color: rgb(162, 180, 193);
+    }
+
+    nav a{
+        margin: 2px;
+        display: block;
+        border: 1px solid black;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        padding: 15px 5px 15px 0;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a::after{
+        content: ">";
+    }
 }
