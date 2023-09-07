@@ -4,7 +4,7 @@ import "./Comments.css"
 const Comments = () => {
     return (
         <div className='comments'>
-            <h3>CLIEND SATISFACTION</h3>
+            <h3>CLIENT SATISFACTION</h3>
 
             <section>
                 <div>

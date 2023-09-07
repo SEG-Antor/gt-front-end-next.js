@@ -5,8 +5,13 @@
     gap: 20px;
     align-items: center;
     padding:5px;
+    padding-bottom: 10px;
     border-radius: 5px;
     position: relative
+}
+
+.single-product:hover{
+    box-shadow: 0 12px 12px -6px rgba(0,0,0,.1);
 }
 
 .sticker{
@@ -47,9 +52,16 @@
     border-radius: 3px;
 }
 
+.single-product button:hover{
+    border: 1px solid rgba(253, 117, 38, 0.4);
+}
+
 .single-product button:first-child{
-    border: 1px solid rgba(49, 151, 233, 0.1);
     background-color: rgba(49, 151, 233, 0.1);
+    border: 1px solid rgba(49, 151, 233, 0.1);
     color: rgba(49, 151, 233, 1);
 }
 
+.single-product button:first-child:hover{
+    border: 1px solid rgba(49, 151, 233, 0.4);
+}

@@ -1,6 +1,5 @@
 import React from 'react'
 import "./singleproduct.css"
-import Link from 'next/link'
 
 const SingleProduct = ({image, description}) => {
   return (

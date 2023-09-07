@@ -26,11 +26,15 @@
     margin-right: 5px;
 }
 
-.banner-2{
+.sub-banner{
     width: 90vw;
     margin: auto;
     margin-top: 50px;
     border-radius: 5px;
+}
+
+.sub-banner:hover {
+    box-shadow: 0 10px 10px rgba(0,0,0,.12);
 }
 
 .pre-and-refub{
@@ -60,7 +64,6 @@
 }
 
 .see-more{
-    background-color: rgba(178, 218, 243, 0.3);
     padding:10px 40px ;
     border: 1px solid;
     border-radius: 5px;
@@ -68,6 +71,10 @@
     display: block;
     margin: auto;
     margin-top: 30px;
+}
+
+.see-more:hover{
+    background-color: rgba(178, 218, 243, 0.3);
 }
 
 .adds{
@@ -81,6 +88,10 @@
 
 .adds img{
     width: 100%;
+}
+
+.adds img:hover{
+    box-shadow: 0 12px 12px -6px rgba(0,0,0, .5);
 }
 
 

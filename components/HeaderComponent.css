@@ -2,11 +2,6 @@ header{
     background: #E5E4E2;
 }
 
-header a{
-    text-decoration: none;
-    color: black;
-}
-
 .headerDiv{
   display:flex;
   justify-content: space-between;

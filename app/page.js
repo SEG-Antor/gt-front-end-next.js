@@ -12,7 +12,7 @@ export default function Home() {
       {/* <p>under here comes the admin page</p>
       <hr></hr>
       <Link href="admin-secret"> Go to admin secret</Link> */}
-      
+
       <BootstrapCarousel></BootstrapCarousel>
 
       <div className='logos'>
@@ -48,7 +48,7 @@ export default function Home() {
       </div>
 
       <Link href="top-seller">
-        <img className='banner-2' src="/staticImages/second-banner.png" alt="second banner" />
+        <img className='sub-banner' src="/staticImages/second-banner.png" alt="second banner" />
       </Link>
 
       <div className='pre-and-refub'>
@@ -77,6 +77,10 @@ export default function Home() {
         <img src='/adds/add3.png' alt='product add' />
         <img src='/adds/add4.png' alt='product add' />
       </div>
+
+      <Link href="top-seller">
+        <img className='sub-banner' src="/staticImages/third-banner.png" alt="second banner" />
+      </Link>
 
       <Comments></Comments>
     </main>
