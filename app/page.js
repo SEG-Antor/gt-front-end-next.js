@@ -4,6 +4,7 @@ import Link from 'next/link'
 import "./landingpage.css"
 import SingleProduct from '@/components/SingleProduct'
 import Comments from '@/components/Comments'
+import BootstrapCarousel from '@/components/BootstrapCarousel'
 
 export default function Home() {
   return (
@@ -11,8 +12,8 @@ export default function Home() {
       {/* <p>under here comes the admin page</p>
       <hr></hr>
       <Link href="admin-secret"> Go to admin secret</Link> */}
-
-      <img className='carosel-img' src='/staticImages/banner.png' alt='banner' />
+      
+      <BootstrapCarousel></BootstrapCarousel>
 
       <div className='logos'>
         <div>
