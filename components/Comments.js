@@ -22,13 +22,13 @@ const Comments = () => {
                 <div>
                     <p>Antik</p>
                     <small>2 weeks ago</small>
-                    <p>As always the iphone does not disappoint. It is a bit expensive, but the user experience is really to notch. It feels very well made, and I have enjoyed using it so far. Battery life is excellent, the screen is beautiful, and while I haven't taken many photos yet, the cameras seem great, especially the selfie camera.</p>
+                    <p>As always the iphone does not disappoint. It is a bit expensive, but the user experience is really to notch. It feels very well made, and I have enjoyed using it so far. Battery life is excellent, the screen is beautiful, and while I haven&apos;t taken many photos yet, the cameras seem great, especially the selfie camera.</p>
                 </div>
 
                 <div>
                     <p>Shayekh</p>
                     <small>1 weeks ago</small>
-                    <p>Loving my phone! At the moment I’m needing to take photos and videos for a project and the quality is superb. It looks as if I’m still standing in the scene. Battery can sometimes last me two days even if I’ve been steaming video.</p>
+                    <p>Loving my phone! At the moment I&apos;m needing to take photos and videos for a project and the quality is superb. It looks as if I&apos;m still standing in the scene. Battery can sometimes last me two days even if I&apos;ve been steaming video.</p>
                 </div>
             </section>
         </div>
