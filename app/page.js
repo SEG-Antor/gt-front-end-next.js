@@ -12,7 +12,7 @@ export default function Home() {
       <hr></hr>
       <Link href="admin-secret"> Go to admin secret</Link> */}
 
-      <img className='w-full' src='/staticImages/banner.png' alt='banner' />
+      <img className='carosel-img' src='/staticImages/banner.png' alt='banner' />
 
       <div className='logos'>
         <div>
