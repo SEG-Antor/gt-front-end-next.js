@@ -39,6 +39,10 @@
     margin-right: 0;
 }
 
+#navBtn{
+    display: none;
+}
+
 nav{
     background: rgba(0, 132, 214, 0.2);
     padding: 15px;
@@ -55,6 +59,10 @@ nav a:last-child{
 }
 
 @media screen and (max-width:550px) {
+    header{
+        margin-bottom: 20px;
+    }
+    
     .headerDiv{
         flex-direction: column;
         padding:20px 5px;
@@ -82,6 +90,17 @@ nav a:last-child{
         width: 100vw;
         
         display: none; 
+    }
+
+    #navBtn{
+        display: block;
+        background-color: red;
+        width: 100%;
+        padding: 10px;
+        
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 132, 214, 0.2);
     }
 
 
