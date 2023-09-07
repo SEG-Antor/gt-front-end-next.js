@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import "./landingpage.css"
 import SingleProduct from '@/components/SingleProduct'
+import Comments from '@/components/Comments'
 
 export default function Home() {
   return (
@@ -75,6 +76,8 @@ export default function Home() {
         <img src='/adds/add3.png' alt='product add' />
         <img src='/adds/add4.png' alt='product add' />
       </div>
+
+      <Comments></Comments>
     </main>
   )
 }
