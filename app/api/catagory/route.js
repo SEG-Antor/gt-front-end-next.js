@@ -17,11 +17,13 @@ export const GET = async (req, res) => {
 }
 
 export const POST = async (req, res) => {
-    connectToDb()
-
+    const data = await req.json()
     try{
+        connectToDb()
+        const newProduct = new ParentProduct(data)
+        await newProduct.save()
 
-        return new Response(JSON.stringify(result), {status: 200})
+        return new Response(JSON.stringify(newProduct), {status: 200})
     }catch(error){
         console.log("error ***: ", error)
     }

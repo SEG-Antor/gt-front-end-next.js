@@ -1,10 +1,11 @@
 "use client"
 import React, { createElement, useEffect, useState } from 'react'
 import { styled } from 'styled-components'
-import axiosInstance from '@/utilities/axiosInstance'
+// import axiosInstance from '@/utilities/axiosInstance'
 import { storage } from '@/utilities/firebaseConfig'
 import { ref, getDownloadURL, uploadBytesResumable } from "firebase/storage"
 import ImagesForCatagory from '@/components/ImagesForCatagory'
+import axios from 'axios'
 
 const StyledForm = styled.form`
   display: flex;
@@ -45,7 +46,7 @@ const AddCatagory = () => {
     const modelName = e.target.productModel.value
     const description = e.target.description.value
 
-    axiosInstance.post("createparent", { modelName, description, images })
+    axios.post("/api/catagory", { modelName, description, images })
     .then(result => { 
       console.log(result);
       e.target.productModel.value = ""; 
