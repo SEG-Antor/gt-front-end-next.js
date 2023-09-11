@@ -1,6 +1,7 @@
 "use client"
 import SingleCatagory from '@/components/Catagory'
-import axiosInstance from '@/utilities/axiosInstance'
+// import axiosInstance from '@/utilities/axiosInstance'
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { styled } from 'styled-components'
 
@@ -11,7 +12,7 @@ const AllCatagories = () => {
   const [update, setUpdate] = useState(false)
 
   useEffect(()=>{
-    axiosInstance.get("allparentscatagories").then(result => setCatagories(result.data))
+    axios.get("/api/catagory").then(result => setCatagories(result.data))
   }, [, update])
 
 
