@@ -5,6 +5,7 @@ import { styled } from 'styled-components'
 import ImagesForCatagory from './ImagesForCatagory'
 import { storage } from '@/utilities/firebaseConfig'
 import { ref, getDownloadURL, uploadBytesResumable } from "firebase/storage"
+import axios from 'axios'
 
 const StyeldDiv = styled.div`
   border-bottom: 1px solid black;
@@ -100,7 +101,7 @@ const SingleCatagory = ({ catagory, setUpdate }) => {
   function handleSubmit(e) {
     e.preventDefault()
 
-    axiosInstance.patch(`updateparentcatagory/${catagory._id}`, {
+    axios.patch(`/api/catagory/?id=${catagory._id}`, {
       modelName: e.target.productModel.value,
       description: e.target.description.value,
       images
@@ -114,7 +115,7 @@ const SingleCatagory = ({ catagory, setUpdate }) => {
   function handleDelete() {
     let confirmaiton = confirm("are you sure, want to delete this catagory ?")
     if (confirmaiton) {
-      axiosInstance.delete(`deleteSingleCatagory/${catagory._id}`)
+      axios.delete(`/api/catagory/?id=${catagory._id}`)
         .then(res => setUpdate(prev => !prev))
         .catch(error => console.log(error))
     }
